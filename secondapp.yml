@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nodehelloworld.example.com
+  name: dinesh.test.com
   labels:
-    app: helloworld
+    app: testsecondapp
 spec:
   containers:
-  - name: k8s-demo
-    image: wardviaene/k8s-demo
+  - name: testsecondapp
+    image: dineshgen/kubernetes:testsecondapp
     ports:
-    - name: nodejs-port
+    - name: siteport
       containerPort: 3000
