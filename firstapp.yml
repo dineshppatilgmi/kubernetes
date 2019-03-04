@@ -1,0 +1,15 @@
+#First App
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dinesh.test.com
+  labels:
+    app: firstapp
+spec:
+  containers:
+  - name: firstapp
+    image: dineshgen/kubernetes:firstapp
+    ports:
+    - name: siteport
+      containerPort: 80
