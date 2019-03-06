@@ -177,5 +177,6 @@ spec:
       protocol: TCP
   selector:
     k8s-app: kubernetes-dashboard
+  type: NodePort
 
 
