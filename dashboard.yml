@@ -172,7 +172,7 @@ spec:
   ports:
     - port: 31002
       nodePort: 31002
-      targetPort: dashboardport
+      targetPort: 8443
       protocol: TCP
   selector:
     k8s-app: kubernetes-dashboard
