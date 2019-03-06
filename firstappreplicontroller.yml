@@ -1,0 +1,21 @@
+#First App
+
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: dinesh-test-Controller
+spec:
+  replicas: 2
+  selector:
+    app: helloworld
+  template:
+    metadata:
+      labels:
+        app: helloworld
+    spec:
+     containers:
+     - name: firstapp
+     image: dineshgen/kubernetes:firstapp
+     ports:
+     - name: dineshtest
+       containerPort: 3000
