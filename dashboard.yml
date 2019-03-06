@@ -171,7 +171,6 @@ metadata:
 spec:
   ports:
     - port: 31002
-      nodePort: 31002
       targetPort: 8443
       protocol: TCP
   selector:
