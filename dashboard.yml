@@ -171,10 +171,10 @@ metadata:
 spec:
   ports:
     - name: dashboardservice
-       port: 31002
-       nodePort: 31002
-       targetPort: dashboardport
-       protocol: TCP
+      port: 31002
+      nodePort: 31002
+      targetPort: dashboardport
+      protocol: TCP
   selector:
     k8s-app: kubernetes-dashboard
 
