@@ -1,0 +1,15 @@
+#First App
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wuapp
+  labels:
+    app: wuapp
+spec:
+  containers:
+  - name: wuapp
+    image: hpatani/docker-demo-hub:latest
+    ports:
+    - name: wuappport
+      containerPort: 3000

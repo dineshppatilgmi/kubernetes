@@ -1,0 +1,15 @@
+#First App
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: wuservice
+spec:
+ ports:
+  - port: 31001
+    nodePort: 31001 # 30000-32767 kube-apiserver --service-node-port-range
+    targetPort: wuappport
+    protocol: TCP
+ selector:
+   app: wuapp
+ type: NodePort
