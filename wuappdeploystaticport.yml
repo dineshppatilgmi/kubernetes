@@ -1,0 +1,17 @@
+#First App
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: wuservice-staticport
+spec:
+ type: NodePort
+ ports:
+  - name: wuhttp
+    port: 80
+    targetPort: 80
+    nodePort: 30035
+    protocol: TCP
+ selector:
+   app: mywuapp
+ 

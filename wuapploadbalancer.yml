@@ -1,0 +1,15 @@
+#First App
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: wuservice-deploy
+spec:
+ type: NodePort
+ ports:
+  - port: 31539
+    targetPort: 80
+    protocol: TCP
+ selector:
+   app: mywuapp
+ 
