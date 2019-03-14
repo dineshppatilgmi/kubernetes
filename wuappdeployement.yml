@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: wuapp-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mywuapp
+    spec:
+      containers:
+      - name: hpatani-wuapp
+        image: hpatani/docker-demo-hub:latest
+        ports:
+        - name: mydotnetport
+          containerPort: 80
+      imagePullSecrets:
+      - name: regcred

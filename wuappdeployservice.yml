@@ -1,0 +1,15 @@
+#First App
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: wuservice-deploy
+spec:
+ type: NodePort
+ ports:
+  - port: 80
+    nodePort: 80 # 30000-32767 kube-apiserver --service-node-port-range
+    protocol: TCP
+ selector:
+   app: mywuapp
+ 
