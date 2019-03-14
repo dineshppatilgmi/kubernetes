@@ -12,6 +12,6 @@ spec:
     image: hpatani/docker-demo-hub:latest
     ports:
     - name: wuappport
-      containerPort: 3000
+      containerPort: 80
   imagePullSecrets:
   - name: regcred
