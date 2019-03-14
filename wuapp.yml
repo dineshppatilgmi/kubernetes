@@ -13,3 +13,5 @@ spec:
     ports:
     - name: wuappport
       containerPort: 3000
+  imagePullSecrets:
+  - name: regcred
